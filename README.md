@@ -22,6 +22,7 @@ Blynk Server - responsible for all the communications between the smartphone and
 Blynk Libraries - for all the popular hardware platforms - enable communication with the server and process all the incoming and outcoming commands.
 
 Every time you press a Button in the Blynk app, the message travels to space the Blynk Cloud, where it magically finds its way to your hardware. It works the same in the opposite direction and everything happens in a blink of an eye.
+https://cloud.githubusercontent.com/assets/18737539/24123343/1a23def8-0de5-11e7-8fb4-637e6474bf60.png
 
 ## Hardware Requirements
 1. Water Level Sensor
@@ -32,6 +33,7 @@ Every time you press a Button in the Blynk app, the message travels to space the
 1. A0 from nodemcu to S of water level sensor
 2. 3V from nodemcu to + of water level sensor
 3. G from nodemcu to - of water level sensor
+
 
 ## Widgets Used 
 1. Horizontal Level for A0(water level)
