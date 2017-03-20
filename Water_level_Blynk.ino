@@ -2,7 +2,7 @@
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
-// Auth Token from the Blynk App.
+// Authorization token from the Blynk App.
 char auth[] = "a0f7f2d3c0ad4b5aa4b6c274906e04c1";
 
 // Your WiFi credentials.
@@ -14,31 +14,28 @@ char pass[] = "codelanguage";
 const int sensorPin= A0; //sensor pin connected to analog pin A0
 float liquid_level;
 int liquid_percentage;
-int top_level = 512;
-int bottom_level = 3;
+int top_level = 500;//Maximum water level
+int bottom_level = 0;//Minimum water level
 
-BLYNK_WRITE(V1)
-{
-  int pinValue = param.asInt(); 
-  Serial.print("V2 Slider value is: ");
-  Serial.println(pinValue);
-}
 
 void setup() {
   Serial.begin(9600);
   Blynk.begin(auth, ssid, pass);
   pinMode(sensorPin, INPUT);
+  Blynk.virtualWrite(V1, liquid_percentage);//This wil show the percentage of water in the container in a virtual pin V1
   Blynk.run();
-  
 }
+
 
 void loop() {
   liquid_level = analogRead(sensorPin);
-  liquid_percentage = ((liquid_level-bottom_level)/top_level)*100;
-  Serial.println(liquid_level);
-  delay(100);
-  
+  liquid_percentage = ((liquid_level-bottom_level)/top_level)*100;//Percentage of water in the container 
+  Serial.println(liquid_level);//This will print the liquid level in the monitor 
+  Serial.println(liquid_percentage);//This will print the percentage of liquid in the monitor
+  Blynk.virtualWrite(V1, liquid_percentage);
+  delay(1000);
   Blynk.run();
 }
+
 
 
