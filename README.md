@@ -33,9 +33,11 @@ https://cloud.githubusercontent.com/assets/18737539/24123343/1a23def8-0de5-11e7-
 1. A0 from nodemcu to S of water level sensor
 2. 3V from nodemcu to + of water level sensor
 3. G from nodemcu to - of water level sensor
+
 https://cloud.githubusercontent.com/assets/18737539/24123421/77803ea2-0de5-11e7-842b-36254b4c583c.jpg
 
 ## Widgets Used 
 1. Horizontal Level for A0(water level)
 2. Value for V1(percentage of water)
+
 https://cloud.githubusercontent.com/assets/18737539/24123511/cac20744-0de5-11e7-9944-cb424530d534.png
