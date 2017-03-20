@@ -3,12 +3,12 @@
 #include <BlynkSimpleEsp8266.h>
 
 // Authorization token from the Blynk App.
-char auth[] = "a0f7f2d3c0ad4b5aa4b6c274906e04c1";
+char auth[] = "XXXXXXXXXXXXXXXX";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "Stoned Panda";
-char pass[] = "codelanguage";
+char ssid[] = "XXXXXXXX";
+char pass[] = "XXXXXXXX";
 
 
 const int sensorPin= A0; //sensor pin connected to analog pin A0
