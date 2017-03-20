@@ -29,9 +29,9 @@ Every time you press a Button in the Blynk app, the message travels to space the
 3. Blynk App on your smartphone
 
 ## Connections
-A0 from nodemcu to S of water level sensor
-3V from nodemcu to + of water level sensor
-G from nodemcu to - of water level sensor
+1. A0 from nodemcu to S of water level sensor
+2. 3V from nodemcu to + of water level sensor
+3. G from nodemcu to - of water level sensor
 
 ## Widgets Used 
 1. Horizontal Level for A0(water level)
