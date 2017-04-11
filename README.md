@@ -24,10 +24,20 @@ Blynk Libraries - for all the popular hardware platforms - enable communication 
 Every time you press a Button in the Blynk app, the message travels to space the Blynk Cloud, where it magically finds its way to your hardware. It works the same in the opposite direction and everything happens in a blink of an eye.
 ![architecture](https://cloud.githubusercontent.com/assets/18737539/24123343/1a23def8-0de5-11e7-8fb4-637e6474bf60.png)
 
+## Raspberry Pi - 3
+I will be using a local server rather than the cloud server provided by Blynk.
+
+Main advantages of a local server over cloud server are
+1. Better security. You are the only one who knows about the server. You can setup security policies tied to your specific needs (MAC, IPs, login names, etc). You can also make it accessible only within your private network.
+2. Better stability. No need to rely on 3rd party Cloud solution. You have the full control.
+3. Lower latency. Server is as close to you as it could be.
+4. Maximum privacy. All data is stored locally and is not shared with anyone.
+5. The local server will be able transfer data over the router and without the internet.
 ## Hardware Requirements
 1. Water Level Sensor
 2. Nodemcu
 3. Blynk App on your smartphone
+4. Raspberry pi 
 
 ## Connections
 1. A0 from nodemcu to S of water level sensor
