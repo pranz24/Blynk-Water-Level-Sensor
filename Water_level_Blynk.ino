@@ -9,6 +9,7 @@ char auth[] = "XXXXXXXXXXXXXXXX";
 // Set password to "" for open networks.
 char ssid[] = "XXXXXXXX";
 char pass[] = "XXXXXXXX";
+char server[] = "XXXXXXXXXXX";
 
 
 const int sensorPin= A0; //sensor pin connected to analog pin A0
@@ -20,7 +21,7 @@ int bottom_level = 0;//Minimum water level
 
 void setup() {
   Serial.begin(9600);
-  Blynk.begin(auth, ssid, pass);
+  Blynk.begin(auth, ssid, pass,server);
   pinMode(sensorPin, INPUT);
   Blynk.virtualWrite(V1, liquid_percentage);//This wil show the percentage of water in the container in a virtual pin V1
   Blynk.run();
