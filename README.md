@@ -44,10 +44,11 @@ Main advantages of a local server over cloud server are
 2. 3V from nodemcu to + of water level sensor
 3. G from nodemcu to - of water level sensor
 
-![20170321_025609](https://cloud.githubusercontent.com/assets/18737539/24123421/77803ea2-0de5-11e7-842b-36254b4c583c.jpg =250x250)
+<img src="https://cloud.githubusercontent.com/assets/18737539/24123421/77803ea2-0de5-11e7-842b-36254b4c583c.jpg" width="200" height="400">
+
 
 ## Widgets Used 
 1. Horizontal Level for A0(water level)
 2. Value for V1(percentage of water)
 
-![screenshot_2017-03-21-03-22-21] <img src="https://cloud.githubusercontent.com/assets/18737539/24123511/cac20744-0de5-11e7-9944-cb424530d534.png" width="400" height="400">
+![screenshot_2017-03-21-03-22-21] <img src="https://cloud.githubusercontent.com/assets/18737539/24123511/cac20744-0de5-11e7-9944-cb424530d534.png" width="200" height="400">
